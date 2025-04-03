@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: recovery
+    env: node
+    buildCommand: "npm install"
+    startCommand: "node server.js"
+    envVars:
+      - key: MONGO_URI
+        value: "mongodb+srv://recovery-izzy-sales:Izzy2025@izzy.8hwakkl.mongodb.net/?retryWrites=true&w=majority&appName=izzy"
+      - key: PORT
+        value: "3000"
